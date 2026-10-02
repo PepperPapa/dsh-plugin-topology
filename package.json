@@ -1,0 +1,55 @@
+{
+  "name": "dsh-plugin-topology",
+  "version": "1.0.0",
+  "description": "Plugin star map for the DSH Web UI: a live dependency graph of the web plugin plane with fiber states and per-plugin detail",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "plugin-manager",
+    "visualization",
+    "topology"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<你的用户名>/dsh-plugin-topology.git"
+  },
+  "homepage": "https://github.com/<你的用户名>/dsh-plugin-topology#readme",
+  "bugs": {
+    "url": "https://github.com/<你的用户名>/dsh-plugin-topology/issues"
+  },
+  "icon": "./icon.svg",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "icon.svg",
+    "cordis.patch.yml",
+    "locale/*.json"
+  ],
+  "dsh": {
+    "meta": {
+      "title": {
+        "en": "Plugin Star Map",
+        "zh": "插件星图"
+      },
+      "description": {
+        "en": "A live dependency graph of the web plugins, with each fiber's state and a detail panel per plugin.",
+        "zh": "实时呈现 Web 插件依赖关系图，展示每个插件的 fiber 状态并提供详情面板。"
+      }
+    },
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  }
+}

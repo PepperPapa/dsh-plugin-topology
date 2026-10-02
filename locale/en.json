@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Plugin Star Map",
+    "description": "A live dependency graph of the web plugins, with each fiber's state and a detail panel per plugin."
+  }
+}

@@ -1,0 +1,10 @@
+# One row: the Host half of the star-map bundle. Its only job is to exist as a
+# Loader entry, so the bundle's `dsh.client` browser half reaches the page's
+# boot graph; the reading and drawing happen in the Client half.
+#
+# `name` must equal the package name in package.json, or the Loader cannot
+# import the row.
+
+- insert:
+    - id: plugin-topology
+      name: dsh-plugin-topology

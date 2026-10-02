@@ -1,0 +1,9 @@
+# 这个包刻意保持零依赖、纯 JavaScript：没有 node_modules、没有构建产物。
+# 与根目录同名的 .gitignore 是给"直接把插件目录当仓库根"这种布局兜底的。
+
+node_modules/
+dist/
+lib/
+*.log
+.tmp-*
+.DS_Store
