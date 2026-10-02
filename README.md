@@ -14,6 +14,9 @@ Web UI 插件星图：在 Harness 页面里实时展示插件之间的依赖关�
 - **fiber 状态**：直接读 Cordis `FiberState`（active / loading / pending / unloading / failed / disposed），`internal/status` 与 `internal/plugin` 事件触发重绘，因此是实时的，不是打开时的快照。
 - **点击节点**：右侧详情面板给出 entry id、fiber uid、图修订号、Host 同包条目、提供的能力、依赖的能力（含“未解析”标记）、依赖的插件与被依赖的插件，均可点击跳转。
 - **自检**：图里没有任何依赖边时，顶部显示黄色横幅说明是哪个数据源没读到；详情面板的「数据源自检」列出每个来源的读数（Loader 条目 / 有 fiber 的行 / 有 inject 的行 / 启动图行数 / Cordis 服务数 / 各类边数）。
+![插件拓扑图](./images/插件拓扑图.png)
+![插件依赖关系](./images/聚焦模式.png)
+![插件清单列表](./images/插件清单.png)
 
 ## 取舍
 
